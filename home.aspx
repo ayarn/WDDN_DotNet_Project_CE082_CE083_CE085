@@ -21,10 +21,17 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-
+        Login Here ;
        <div class="login">
-           this is login 
-
+         LOGIN
+           <br />
+           USER NAME :
+           <input id="Text1" type="text" / style="padding:2px">
+           <br />
+           PASSWORD :
+           <input id="Password1" type="password" />
+           <br /><br />
+           <asp:Button ID="Button1" runat="server" Text="Submit" />
        </div>
 
         <div class="footer">
