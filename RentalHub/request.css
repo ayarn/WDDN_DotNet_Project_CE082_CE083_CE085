@@ -1,0 +1,103 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.title {
+    padding: 2px;
+    background: rgb(72,156,205);
+    background: linear-gradient(90deg, rgba(72,156,205,1) 0%, rgba(28,208,135,1) 50%, rgba(86,173,232,1) 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+.title p {
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+.big {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.small {
+    font-size: 30px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Prompt', sans-serif;
+}
+
+    .navbar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+#adminBtn {
+    margin: 10px;
+    float: right;
+    padding: 5px 10px;
+    background-color: #FFDF00;
+    color: black;
+    font-size: 12px;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 8px;
+}
+
+#logout {
+    margin: 10px;
+    float: right;
+    padding: 5px 10px;
+    background-color: #FFDF00;
+    color: black;
+    font-size: 12px;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 8px;
+}
+
+#req{
+    font-family:'Times New Roman', Times, serif;
+    font-size:5vh;
+    text-align: center;
+    color: seagreen;
+}
+
+#notice {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vh;
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5vh;
+    text-align: center;
+    color: orangered;
+}
+
+#info {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    color: midnightblue;
+}
