@@ -28,9 +28,9 @@
         </div>
         <div class="navbar">
             <a href="home_page.aspx">Home</a>
-            <a href="#">Order</a>
+            <a href="order_page.aspx">Order</a>
             <a href="request_page.aspx">Request</a>
-            <a href="#">Upload</a>
+           
             
             <asp:Button ID="logout" runat="server" Text="Logout" />
             <asp:Button ID="adminBtn" runat="server" Text="Admin" />
@@ -44,6 +44,7 @@
             <asp:Label ID="Label3" runat="server" BackColor="#6600ff" BorderStyle="Solid" BorderWidth="2px" Font-Bold="True" Font-Names="Arial" ForeColor="White" CssClass="auto-style2"></asp:Label>
             <br />
             <br />
+                <div class="auto-style1">
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
@@ -61,6 +62,7 @@
                 <SortedDescendingCellStyle BackColor="#FFFDF8" />
                 <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
             </asp:GridView>
+                </div>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userdbConnectionString %>" SelectCommand="SELECT [photo] FROM [Picture] WHERE ([Product Name] = @Product_Name)">
                 <SelectParameters>
                     <asp:QueryStringParameter Name="Product_Name" QueryStringField="pn" Type="String" />

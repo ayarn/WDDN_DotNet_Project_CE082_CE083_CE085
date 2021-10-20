@@ -76,10 +76,10 @@
             <a href="home_page.aspx">Home</a>
             <a href="order_page.aspx">Order</a>
             <a href="request_page.aspx">Request</a>
-            <a href="#">Upload</a>
+            
             
             <asp:Button ID="logout" runat="server" Text="Logout" />
-            <asp:Button ID="adminBtn" runat="server" Text="Admin"  />
+            
             
         </div>
         

@@ -20,12 +20,12 @@
         </div>
         <div class="navbar">
             <a href="home_page.aspx">Home</a>
-            <a href="#">Order</a>
+            <a href="order_page.aspx">Order</a>
             <a href="request_page.aspx">Request</a>
-            <a href="#">Upload</a>
+            
             
             <asp:Button ID="logout" runat="server" Text="Logout" />
-            <asp:Button ID="adminBtn" runat="server" Text="Admin" />
+            
         </div>
         <div style="border-style: solid; border-width: thin; padding: 2px; margin: 60px; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; color: #333399; text-align: center; background-color: #9BB4E6; position: relative;">
             MAKE PAYMENT :<br />

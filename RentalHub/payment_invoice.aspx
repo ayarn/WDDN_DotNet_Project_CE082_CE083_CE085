@@ -56,12 +56,12 @@
         </div>
         <div class="navbar">
             <a href="home_page.aspx">Home</a>
-            <a href="#">Order</a>
+            <a href="order_page.aspx">Order</a>
             <a href="request_page.aspx">Request</a>
-            <a href="#">Upload</a>
+            
             
             <asp:Button ID="logout" runat="server" Text="Logout" />
-            <asp:Button ID="adminBtn" runat="server" Text="Admin" />
+            
         </div>
         <table id="invoice" align ="center" class="auto-style1" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; color: #CC3300; text-align: center">
             <tr>

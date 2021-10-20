@@ -47,5 +47,7 @@ namespace RentalHub
                 Response.Write(ex.Message);
             }
         }
+
+        
     }
 }

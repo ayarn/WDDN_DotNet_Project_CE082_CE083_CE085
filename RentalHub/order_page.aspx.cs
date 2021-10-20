@@ -33,5 +33,6 @@ namespace RentalHub
             Response.Redirect("Confirmation.aspx?pn=" + gr.Cells[2].Text);
         }
 
+        
     }
 }

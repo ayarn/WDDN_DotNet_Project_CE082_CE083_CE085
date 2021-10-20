@@ -25,5 +25,11 @@ namespace RentalHub
         {
             Response.Redirect("request_success_page.aspx");
         }
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
+            //Session["Uname"] = "";
+            Response.Redirect("login_page.aspx");
+        }
     }
 }

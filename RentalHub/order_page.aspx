@@ -29,10 +29,10 @@
             <a href="home_page.aspx">Home</a>
             <a class="active" href="#">Order</a>
             <a href="request_page.aspx">Request</a>
-            <a href="#">Upload</a>
+            
             
             <asp:Button ID="logout" runat="server" Text="Logout" />
-            <asp:Button ID="adminBtn" runat="server" Text="Admin" />
+            
         </div>
         <br />
         <div class="items">SELECT ITEMS</div>

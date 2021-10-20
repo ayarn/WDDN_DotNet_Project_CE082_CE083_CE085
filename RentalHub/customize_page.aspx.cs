@@ -50,5 +50,7 @@ namespace RentalHub
             Response.Redirect("customize_page.aspx");
         }
 
+        
+      
     }
 }

@@ -17,7 +17,7 @@
             <a class="active" href="home_page.aspx">Home</a>
             <a href="order_page.aspx">Order</a>
             <a href="request_page.aspx">Request</a>
-            <a href="#">Upload</a>
+            
             
             <asp:Button ID="adminBtn" runat="server" Text="Admin" OnClick="adminBtn_Click" />
             

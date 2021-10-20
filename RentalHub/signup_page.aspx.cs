@@ -60,7 +60,7 @@ namespace RentalHub
             Response.Redirect("login_page.aspx");
         }
 
-       
+        
     }
 }
 

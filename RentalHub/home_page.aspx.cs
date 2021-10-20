@@ -25,10 +25,7 @@ namespace RentalHub
 
         }
 
-        protected void adminBtn_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("admin_page.aspx");
-        }
+        
 
         
     }
