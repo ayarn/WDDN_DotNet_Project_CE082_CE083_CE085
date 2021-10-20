@@ -89,6 +89,8 @@
     <Content Include="home.css" />
     <Content Include="home_page.aspx" />
     <Content Include="img_fridge.jpg" />
+    <Content Include="jsfiles\html2canvas.min.js" />
+    <Content Include="jsfiles\pdfmake.min.js" />
     <Content Include="login.css" />
     <Content Include="login_page.aspx" />
     <Content Include="order.css" />

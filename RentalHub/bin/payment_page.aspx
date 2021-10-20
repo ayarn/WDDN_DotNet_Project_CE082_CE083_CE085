@@ -4,14 +4,33 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <link rel="stylesheet" href="request.css" />
+    <title>Payment</title>
+    <style type="text/css">
+        .auto-style1 {
+            font-size: large;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="title">
+            <p class="big">Rental Hub</p>
+            <p class="small">The place where you'll find every props on Rent..!</p>
+        </div>
+        <div class="navbar">
+            <a href="home_page.aspx">Home</a>
+            <a href="#">Order</a>
+            <a href="request_page.aspx">Request</a>
+            <a href="#">Upload</a>
+            
+            <asp:Button ID="logout" runat="server" Text="Logout" />
+            <asp:Button ID="adminBtn" runat="server" Text="Admin" />
+        </div>
+        <div style="border-style: solid; border-width: thin; padding: 2px; margin: 60px; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; color: #333399; text-align: center; background-color: #9BB4E6; position: relative;">
             MAKE PAYMENT :<br />
             <br />
-            <table class="auto-style1">
+            <table class="auto-style1" align="center">
                 <tr>
                     <td class="auto-style3">Name : </td>
                     <td class="auto-style5">
@@ -58,7 +77,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="PAY" />
+                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="PAY" CssClass="auto-style1" />
                     </td>
                     <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>

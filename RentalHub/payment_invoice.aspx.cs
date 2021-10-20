@@ -23,6 +23,7 @@ namespace RentalHub
             Label4.Text = (string)Session["cost"];
             Label5.Text = (string)Session["accno"];
             Label6.Text = (string)Session["bank"];
+            Label10.Text = (string)Session["datepay"];
 
             try
             {

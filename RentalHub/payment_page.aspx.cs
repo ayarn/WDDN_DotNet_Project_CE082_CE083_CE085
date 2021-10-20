@@ -26,15 +26,18 @@ namespace RentalHub
         {
             
             SqlConnection con = new SqlConnection(@"Data Source=(localDb)\MSSQLLocalDB;Initial Catalog=userdb;Integrated Security=True");
+            DateTime dt = DateTime.Now;
+            String datetoday = dt.ToString("yyyy-MM-dd");
             string un = (string)Session["Uname"];
             string ct = (string)Session["cost"];
             string pn = (string)Session["product"];
             Session["name"] = TextBox2.Text;
             Session["bank"] = DropDownList1.Text;
             Session["accno"] = TextBox1.Text;
+            Session["datepay"] = datetoday;
 
             con.Open();
-            string qry = "insert into [payment] values('" + DropDownList1.Text + "', '" + TextBox1.Text +"', '" + un + "', '" + ct + "', '" + pn + "', '" + TextBox2.Text + "')";
+            string qry = "insert into [payment] values('" + DropDownList1.Text + "', '" + TextBox1.Text +"', '" + un + "', '" + ct + "', '" + pn + "', '" + TextBox2.Text + "', '" + datetoday + "')";
             SqlCommand cmd = new SqlCommand(qry, con);
             SqlDataReader sdr = cmd.ExecuteReader();
 

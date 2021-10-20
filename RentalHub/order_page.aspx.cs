@@ -30,7 +30,7 @@ namespace RentalHub
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridViewRow gr = GridView1.SelectedRow;
-            Response.Redirect("Confirmation.aspx?pn=" + gr.Cells[1].Text);
+            Response.Redirect("Confirmation.aspx?pn=" + gr.Cells[2].Text);
         }
 
     }
