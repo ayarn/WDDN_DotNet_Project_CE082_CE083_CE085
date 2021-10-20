@@ -35,10 +35,6 @@
             <a class="active" href="#home">Home</a>
             <a href="order_page.aspx">Order</a>
             <a href="request_page.aspx">Request</a>
-           
-            
-            <asp:Button ID="logout" runat="server" Text="Logout" />
-            <asp:Button ID="adminBtn" runat="server" Text="Admin"  />
             
         </div>
         <div>

@@ -11,7 +11,6 @@ namespace RentalHub
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -29,8 +28,14 @@ namespace RentalHub
 
             if (password == admin_pass && name == "Rentalhub@Admin")
             {
+                Session["admin"] = "true";
                 args.IsValid = true;
             }
+
+        }
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
 
         }
     }

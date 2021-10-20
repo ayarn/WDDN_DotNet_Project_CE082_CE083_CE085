@@ -19,12 +19,12 @@
             <p class="small">The place where you'll find every props on Rent..!</p>
         </div>
         <div class="navbar">
-            <a href="home_page.aspx">Home</a>
+            <a href="#">Home</a>
             <a href="order_page.aspx">Order</a>
             <a href="request_page.aspx">Request</a>
             
             
-            <asp:Button ID="logout" runat="server" Text="Logout" />
+            <asp:Button ID="logout" runat="server" Text="Logout" PostBackUrl="~/home_page.aspx"/>
             
         </div>
         <div style="border-style: solid; border-width: thin; padding: 2px; margin: 60px; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; color: #333399; text-align: center; background-color: #9BB4E6; position: relative;">

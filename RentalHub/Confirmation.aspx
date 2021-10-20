@@ -18,6 +18,15 @@
             font-weight: bold;
             background-color: #FFFF00;
         }
+        .auto-style4 {
+            text-decoration: underline;
+            color: #CC0000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style5 {
+            text-align: center;
+            margin-left: 640px;
+        }
     </style>
     </head>
 <body>
@@ -27,15 +36,19 @@
             <p class="small">The place where you'll find every props on Rent..!</p>
         </div>
         <div class="navbar">
-            <a href="home_page.aspx">Home</a>
+            <a href="#">Home</a>
             <a href="order_page.aspx">Order</a>
             <a href="request_page.aspx">Request</a>
            
             
             <asp:Button ID="logout" runat="server" Text="Logout" />
-            <asp:Button ID="adminBtn" runat="server" Text="Admin" />
         </div>
             <div class="auto-style1">
+        
+                <br />
+                <br />
+                <h3><span class="auto-style4"><strong>Your selection Details:</strong></span></h3>
+                <br />
         
             <asp:Label ID="Label1" runat="server" BackColor="#6600ff" BorderStyle="Solid" BorderWidth="2px" Font-Bold="True" Font-Names="Arial" ForeColor="White" CssClass="auto-style2"></asp:Label>
             <br />
@@ -44,7 +57,7 @@
             <asp:Label ID="Label3" runat="server" BackColor="#6600ff" BorderStyle="Solid" BorderWidth="2px" Font-Bold="True" Font-Names="Arial" ForeColor="White" CssClass="auto-style2"></asp:Label>
             <br />
             <br />
-                <div class="auto-style1">
+                <div class="auto-style5">
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
@@ -68,10 +81,9 @@
                     <asp:QueryStringParameter Name="Product_Name" QueryStringField="pn" Type="String" />
                 </SelectParameters>
             </asp:SqlDataSource>
-            <br />
             <p>
                 <strong>
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Payment" CssClass="auto-style3" />
+                <asp:Button ID="Button1" runat="server" Text="Payment" CssClass="auto-style3" OnClick="Button1_Click" />
                 </strong>
             </p>
             </div>

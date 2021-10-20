@@ -43,7 +43,5 @@ namespace RentalHub
 
             Response.Redirect("payment_invoice.aspx");
         }
-
-        
     }
 }

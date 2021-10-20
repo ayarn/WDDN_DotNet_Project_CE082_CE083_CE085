@@ -13,7 +13,10 @@ namespace RentalHub
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if(Session["admin"] == null)
+            {
+                Response.Redirect("admin_page.aspx");
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -24,7 +27,7 @@ namespace RentalHub
 
                 string uname = TextBox3.Text;
                 DateTime dt = DateTime.Now;
-                String datetoday = dt.ToString("yyyy-mm-dd");
+                String datetoday = dt.ToString("yyyy-MM-dd");
                 string times = datetoday;
                 string pn = TextBox1.Text;
                 string fname = FileUpload1.PostedFile.FileName;
@@ -50,7 +53,10 @@ namespace RentalHub
             Response.Redirect("customize_page.aspx");
         }
 
-        
-      
+        protected void logout_Click(object sender, EventArgs e)
+        {
+            Session["admin"] = null;
+            Response.Redirect("home_page.aspx");
+        }
     }
 }

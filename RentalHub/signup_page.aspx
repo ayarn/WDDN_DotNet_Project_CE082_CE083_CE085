@@ -78,9 +78,6 @@
             <a href="request_page.aspx">Request</a>
             
             
-            <asp:Button ID="logout" runat="server" Text="Logout" />
-            
-            
         </div>
         
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />

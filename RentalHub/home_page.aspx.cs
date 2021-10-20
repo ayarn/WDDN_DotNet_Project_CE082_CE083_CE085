@@ -11,7 +11,10 @@ namespace RentalHub
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(!IsPostBack)
+            {
+                Session["Uname"] = null;
+            }
         }
 
         protected void LoginBtn_Click(object sender, EventArgs e)
@@ -25,8 +28,9 @@ namespace RentalHub
 
         }
 
-        
-
-        
+        protected void adminBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("admin_page.aspx");
+        }
     }
 }

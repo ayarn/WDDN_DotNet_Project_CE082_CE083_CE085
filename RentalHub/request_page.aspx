@@ -44,12 +44,12 @@
             <p class="small">The place where you'll find every props on Rent..!</p>
         </div>
         <div class="navbar">
-            <a href="home_page.aspx">Home</a>
+            <a href="#">Home</a>
             <a href="order_page.aspx">Order</a>
             <a class="active" href="request_page.aspx">Request</a>
             
             
-            <asp:Button ID="logout" runat="server" Text="Logout" />
+            <asp:Button ID="logout" runat="server" Text="Logout" PostBackUrl="~/home_page.aspx" />
             
             
         </div>
@@ -86,13 +86,11 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Time Period :</td>
+                <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style7">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="*"></asp:RequiredFieldValidator >
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>

@@ -14,7 +14,7 @@
             <p class="small">The place where you'll find every props on Rent..!</p>
         </div>
         <div class="navbar">
-            <a href="home_page.aspx">Home</a>
+            <a href="#">Home</a>
             <a href="order_page.aspx">Order</a>
             <a class="active" href="request_page.aspx">Request</a>
             

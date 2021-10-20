@@ -47,8 +47,9 @@ namespace RentalHub
             }
         }
 
-       
-
-        
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("payment_page.aspx?pn=" + Session["product"]);
+        }
     }
 }
